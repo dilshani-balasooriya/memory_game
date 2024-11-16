@@ -1,0 +1,127 @@
+/* Navbar.css */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: #1C1B26;
+    font-family: 'Joti One', cursive;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    padding: 10px 20px;
+}
+
+.nav-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.logo-container {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.logo {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.logo-container:hover .logo {
+    transform: scale(1.1);
+}
+
+.logo-text {
+    color: white;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+}
+
+/* Center the user greeting */
+.user-greeting {
+    color: white;
+    /* Text color for greeting */
+    margin-right: 20px;
+    /* Space to the right of the greeting */
+    font-size: 1em;
+    /* Adjust font size as needed */
+    flex-grow: 1;
+    /* Allow it to take up space */
+    text-align: center;
+    /* Center the text */
+}
+
+/* Adjust the right section to align properly */
+.right {
+    display: flex;
+    align-items: center;
+    /* Center align items */
+    list-style-type: none;
+    /* Remove bullets */
+    margin-left: auto;
+    /* Push right items to the end */
+}
+
+.right li {
+    margin-left: 20px;
+    /* Space between menu items */
+}
+
+.right li a {
+    color: white;
+    /* Link color */
+    text-decoration: none;
+    /* Remove underline */
+    transition: color 0.3s ease;
+    /* Smooth transition */
+    padding: 5px 10px;
+    /* Add padding to links */
+}
+
+.right li a:hover {
+    color: #ff4081;
+    /* Change color on hover */
+    background-color: rgba(255, 64, 129, 0.2);
+    /* Optional: Add background color on hover */
+    border-radius: 4px;
+    /* Optional: Add border radius on hover */
+}
+
+/* Add this CSS for the sign-out button enhancement */
+.sign-out-button {
+    background-color: #ff4081;
+    /* Button background color */
+    color: white;
+    /* Text color */
+    padding: 10px 15px;
+    /* Padding for the button */
+    border: none;
+    /* Remove border */
+    border-radius: 4px;
+    /* Rounded corners */
+    cursor: pointer;
+    /* Pointer cursor on hover */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    /* Smooth transition */
+}
+
+.sign-out-button:hover {
+    background-color: #e91e63;
+    /* Darker shade on hover */
+    transform: scale(1.05);
+    /* Slightly enlarge on hover */
+}
+
+.sign-out-button:focus {
+    outline: none;
+    /* Remove focus outline */
+}
