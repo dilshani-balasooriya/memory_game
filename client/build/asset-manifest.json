@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/static/css/main.ccc8fd7d.css",
+    "main.js": "/static/js/main.e9b653b6.js",
+    "static/media/forest1.jpg": "/static/media/forest1.f68de9cf08e42c69a2b7.jpg",
+    "static/media/background.png": "/static/media/background.973eafbe5302bae23041.png",
+    "static/media/win.png": "/static/media/win.7e34d15b11775a582a4a.png",
+    "static/media/hard.jpg": "/static/media/hard.845c792fb700d61730de.jpg",
+    "static/media/medium.jpg": "/static/media/medium.6e389f7481ed9ae177b1.jpg",
+    "static/media/easy.jpg": "/static/media/easy.213ba4b582ed908b7cf2.jpg",
+    "static/media/back4.jpeg": "/static/media/back4.22b65fab9d90887f4abc.jpeg",
+    "static/media/LoginImage.jpeg": "/static/media/LoginImage.6e2cff6d9c6fff5f20f0.jpeg",
+    "static/media/logo.png": "/static/media/logo.15f509494f1d6d5f85ef.png",
+    "index.html": "/index.html",
+    "main.ccc8fd7d.css.map": "/static/css/main.ccc8fd7d.css.map",
+    "main.e9b653b6.js.map": "/static/js/main.e9b653b6.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ccc8fd7d.css",
+    "static/js/main.e9b653b6.js"
+  ]
+}

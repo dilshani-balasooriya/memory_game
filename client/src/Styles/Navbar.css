@@ -1,0 +1,139 @@
+/* Navbar styles */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: #1C1B26; /* Dark background */
+    font-family: 'Joti One', cursive; /* Custom font */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+    padding: 10px 20px; /* Padding for content spacing */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: background-color 0.3s ease; /* Smooth background transition */
+}
+
+/* Wrapper for navbar content */
+.nav-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+/* Logo container with hover effect */
+.logo-container {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    transition: transform 0.3s ease;
+}
+
+.logo-container:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+.logo {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.logo:hover {
+    transform: scale(1.1); /* Zoom effect on logo */
+}
+
+.logo-text {
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+}
+
+/* User greeting styles */
+.user-greeting {
+    color: white;
+    font-size: 1.2em;
+    margin-right: 20px;
+    text-align: center;
+    flex-grow: 1;
+}
+
+/* Right section (links and buttons) */
+.right {
+    display: flex;
+    align-items: center;
+    list-style: none; /* Remove bullets */
+    margin-left: auto; /* Push to the end */
+    gap: 20px; /* Space between items */
+}
+
+.right li {
+    margin: 0;
+}
+
+.right li a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.right li a:hover {
+    color: #ff4081; /* Accent color on hover */
+    background-color: rgba(255, 64, 129, 0.2);
+}
+
+/* Sign-out button styles */
+.sign-out-button {
+    background-color: #ff4081; /* Vibrant button color */
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.sign-out-button:hover {
+    background-color: #e91e63; /* Darker shade on hover */
+    transform: scale(1.05); /* Slightly enlarge */
+}
+
+.sign-out-button:focus {
+    outline: none;
+}
+
+/* Mobile responsiveness */
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column; /* Stack items vertically */
+        align-items: flex-start;
+        padding: 10px;
+    }
+
+    .nav-wrapper {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .logo-container {
+        margin-bottom: 10px;
+    }
+
+    .right {
+        justify-content: flex-start;
+        width: 100%;
+        gap: 10px;
+    }
+}
